@@ -47,6 +47,9 @@ router.delete('/:studentID', async(req, res) =>{
 
 router.patch('/:studentID', async(req,res)=>{
     try {
+        console.log(req.params);
+        console.log(req.body);
+
         const updtedStudent = await Student.updateOne({_id:req.params.studentID}, {$set: req.body});
         res.send('updated');
     } catch (error) {

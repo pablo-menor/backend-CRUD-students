@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 //Connecting to database
-mongoose.connect('mongodb://localhost/students')
+mongoose.connect('mongodb+srv://admin:pobluxadmin@cluster0.v1qd7.mongodb.net/vue-students?retryWrites=true&w=majority')
     .then(db => console.log('Connected to database'));
 
 //Importing routes
