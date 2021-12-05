@@ -15,7 +15,7 @@ const homeRoutes = require('./routes/home')
 app.set('port', process.env.PORT || 3000)
 
 //Middlewares
-app.use(cors({origin: 'https://students-crud-mevnstack.herokuapp.com/'}));
+app.use(cors({origin: 'https://students-crud-mevnstack.herokuapp.com'}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use('/', homeRoutes);
